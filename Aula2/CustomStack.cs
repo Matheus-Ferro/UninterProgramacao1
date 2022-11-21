@@ -44,7 +44,7 @@ namespace Pratica2
             popResult += customStackInstance.Pop();
 
             Console.WriteLine(popResult);
-            //fim....LIFO-> Last  in, First Out.É uma estrutura de dados que trabalha com LIFO.Essa é uma fila!oi pessoal!
+            //fim....LIFO-> Last  in, First Out.É uma estrutura de dados que trabalha com LIFO.Essa é uma fila!
 
             var customStack1 = new CustomStack<int>();
             var customStack2 = new CustomStack<string>();
