@@ -14,6 +14,11 @@ namespace Exercicio2
       this.Preco = preco;
       this.Quantidade = quantidade;
       Console.WriteLine($"----------PRODUTO CRIADO----------");
+      Console.WriteLine($"Produto: {Nome}");
+      Console.WriteLine($"Preço Un.: R$ " + String.Format("{0:0.00}", Preco));
+      Console.WriteLine($"Quantidade: {Quantidade}");
+      Console.WriteLine($"Valor Total: R$ " + String.Format("{0:0.00}", ValorTotalEstoque()));
+
     }
 
     // Método que retorna o valor total do produto em estoque

@@ -15,15 +15,15 @@
       int c = int.Parse(Console.ReadLine());
 
       // Calculo do delta e das raízes
-      int delta = b * b - 4 * a * c;
+      int delta = (int)(Math.Pow(b, 2) - (4 * a * c));
       if (a == 0 || delta < 0)
       {
         Console.WriteLine($"Impossível Calcular");
       }
       else
       {
-        int x1 = (int)(-b + Math.Sqrt(delta));
-        int x2 = (int)(b - Math.Sqrt(delta));
+        int x1 = (int)((-b + Math.Sqrt(delta)) / (2 * a));
+        int x2 = (int)((-b - Math.Sqrt(delta)) / (2 * a));
         Console.WriteLine($"Delta= {delta}\nx1= {x1}\nx2= {x2}");
       }
     }
